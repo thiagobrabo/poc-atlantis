@@ -2,3 +2,6 @@
 output "caminho_arquivo" {
   value = local_file.arquivo_simples.filename
 }
+output "caminho_arquivo2" {
+  value = local_file.arquivo_simples_2.filename
+}
