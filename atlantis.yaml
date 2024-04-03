@@ -1,0 +1,9 @@
+workflows:
+  default:
+    plan:
+      steps:
+        - run: terraform init
+        - run: terraform plan -out=plan
+    apply:
+      steps:
+        - run: terraform apply plan
